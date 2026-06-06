@@ -63,27 +63,27 @@ Observations:
 
 ### Original ECG Signal
 
-![Original ECG](screenshots/original_signal.png)
+![Original ECG](Screenshots/original_signal.png)
 
 
 ### Noisy ECG Signal
 
-![Noisy ECG](screenshots/noisy_signal.png)
+![Noisy ECG](Screenshots/noisy_signal.png)
 
 
 ### Filtered ECG Signal
 
-![Filtered ECG](screenshots/filtered_signal.png)
+![Filtered ECG](Screenshots/filtered_signal.png)
 
 
 ### Original vs Noisy vs Filtered ECG
 
-![Comparison](screenshots/final.png)
+![Comparison](Screenshots/final.png)
 
 
 ### Filter Window Size Comparison
 
-![Filter Comparison](screenshots/filter_comparison.png)
+![Filter Comparison](Screenshots/filter_comparison.png)
 
 
 ---
