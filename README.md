@@ -2,104 +2,154 @@
 
 ## Overview
 
-This project demonstrates basic ECG signal processing using MATLAB. An ECG signal is loaded from a dataset, artificial noise is added to simulate real-world interference, and a moving average filter is applied to reduce the noise. The results are then compared using graphical analysis.
+This project demonstrates ECG signal processing and noise reduction using MATLAB. The ECG signal is loaded from a dataset, corrupted with artificial Gaussian noise, and filtered using both Moving Average and Butterworth filters. The filtered signal is analyzed in both time and frequency domains, R-peaks are detected automatically, and average heart rate is estimated from the detected peaks.
 
 ---
 
 ## Objectives
 
-* Load and visualize an ECG signal
-* Simulate noise in the ECG waveform
-* Apply a moving average filter
-* Compare original, noisy, and filtered signals
-* Analyze the effect of different filter window sizes
+* Load and visualize ECG data
+* Simulate noise in ECG signals
+* Apply Moving Average filtering
+* Apply Butterworth filtering
+* Compare filtering techniques
+* Perform frequency-domain analysis using FFT
+* Detect R-peaks automatically
+* Estimate average heart rate
 
 ---
 
-## Tools Used
+## Features
 
-* MATLAB Online
-* ECG Dataset (CSV format)
+* ECG signal visualization
+* Gaussian noise simulation
+* Moving Average filtering
+* Butterworth filtering
+* Filter comparison
+* FFT spectrum analysis
+* Automatic R-peak detection
+* Heart rate estimation
 
 ---
 
-## Methodology
+## Technologies Used
 
-### 1. ECG Signal Acquisition
+* MATLAB
+* Signal Processing Techniques
+* FFT (Fast Fourier Transform)
+* Butterworth Filtering
+* Peak Detection Algorithms
 
-The ECG signal was imported from a CSV file and plotted for visualization.
+---
 
-### 2. Noise Addition
+## Project Workflow
 
-Gaussian noise was added to the ECG signal to simulate measurement noise and interference.
+ECG Data Acquisition
 
-### 3. Signal Filtering
+↓
 
-A moving average filter was applied to smooth the noisy ECG signal and reduce random fluctuations.
+Noise Addition
 
-### 4. Performance Comparison
+↓
 
-The original ECG, noisy ECG, and filtered ECG signals were plotted together for comparison.
+Moving Average Filtering
 
-### 5. Filter Window Analysis
+↓
 
-Different moving average window sizes were tested to observe their effect on noise reduction and signal preservation.
+Butterworth Filtering
+
+↓
+
+Filter Comparison
+
+↓
+
+Frequency Domain Analysis (FFT)
+
+↓
+
+R-Peak Detection
+
+↓
+
+Heart Rate Estimation
 
 ---
 
 ## Results
 
-The moving average filter successfully reduced noise while preserving the major ECG waveform characteristics.
-
-Observations:
-
-* The noisy signal contains random fluctuations and spikes.
-* The filtered signal is smoother than the noisy signal.
-* Larger filter window sizes provide greater smoothing but may slightly distort waveform details.
-* Smaller window sizes preserve waveform features but remove less noise.
-
----
-## Screenshots
-
 ### Original ECG Signal
 
 ![Original ECG](Screenshots/original_signal.png)
 
+### Moving Average vs Butterworth Comparison
 
-### Noisy ECG Signal
+![Filter Comparison](Screenshots/moving_average_vs_butterworth_comparison.png)
 
-![Noisy ECG](Screenshots/noisy_signal.png)
+### R-Peak Detection
 
+![R Peak Detection](Screenshots/r-peak_detection.png)
 
-### Filtered ECG Signal
+### Frequency Domain Analysis
 
-![Filtered ECG](Screenshots/filtered_signal.png)
+![FFT Analysis](Screenshots/frequency-domain_analysis.png)
 
+### Heart Rate Estimation
 
-### Original vs Noisy vs Filtered ECG
+The project automatically detects R-peaks and estimates average heart rate from the ECG signal.
 
-![Comparison](Screenshots/final.png)
+Average Heart Rate: **54.14 BPM**
 
+Detected R-Peaks: **3**
 
-### Filter Window Size Comparison
+![Heart Rate Output](Screenshots/heart_rate_output.png)
 
-![Filter Comparison](Screenshots/filter_comparison.png)
+---
 
+## Folder Structure
+
+ECG-Signal-Analysis-and-Noise-Filtering
+
+├── ecg_code.m
+
+├── ecg.csv
+
+├── README.md
+
+└── Screenshots
+
+    ├── original_signal.png
+
+    ├── noisy_signal.png
+
+    ├── filtered_signal.png
+
+    ├── filter_comparison.png
+
+    ├── moving_average_vs_butterworth_comparison.png
+
+    ├── frequency-domain_analysis.png
+
+    ├── r-peak_detection.png
+
+    ├── combined_ecg_analysis.png
+
+    └── heart_rate_output.png
 
 ---
 
 ## Future Improvements
 
-* Implement Butterworth filtering
-* Perform frequency-domain analysis using FFT
-* Detect QRS complexes automatically
-* Compare multiple filtering techniques
-* Classify ECG abnormalities using machine learning
+* Pan-Tompkins QRS Detection
+* Real-Time ECG Monitoring
+* GUI-Based ECG Analyzer
+* Arrhythmia Detection
+* Machine Learning-Based Classification
 
 ---
 
 ## Author
 
-Beema Shahana Shiyad
+**Beema Shahana Shiyad**
 
 B.Tech Electronics and Communication Engineering
